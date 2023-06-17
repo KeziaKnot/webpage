@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eniyanoto Alade">
+    <link rel="stylesheet" type="text/css" href="landing.css">
+</head>
+<body>
+    <header>
+        <h1>Eniyanoto Alade</h1>
+        <input class="search-bar" type="text" placeholder="Search...">
+        <ul id="my-menu">
+            <li><a href="index.html">Homepage</a> </li>
+            <li><a href="resume.html">Resume</a> </li>
+            <li><a href="courses.html">Courses</a> </li>
+        </ul>
+        
+    </header>
+    <main>
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('level1')"> Level 1</button>
+            <button class="btn" onclick="filterSelection('level2')"> Level 2</button>
+        </div>
+  
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="filterDiv level1">BMW</div>
+        <div class="filterDiv level1">Mercedes</div>
+        <div class="filterDiv level2">Cat</div>
+        <div class="filterDiv level2">Dog</div>
+  
+    </main>
+    
+</body>
+</html>
