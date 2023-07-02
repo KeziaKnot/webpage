@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <meta charset="UTF-8">
+    <title>Courses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Eniyanoto Alade">
     <link rel="stylesheet" type="text/css" href="landing.css">
+    <script src="Script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Eniyanoto Alade</h1>
-        <input class="search-bar" type="text" placeholder="Search...">
-        <ul id="my-menu">
-            <li><a href="index.html">Homepage</a> </li>
-            <li><a href="resume.html">Resume</a> </li>
-            <li><a href="courses.html">Courses</a> </li>
-        </ul>
+        <nav id="home-bar">
+            <ul class="menu">
+                <li><a href="index.html"><h1>Eniyanoto Alade</h1></a> </li>
+            </ul>
+            <ul class="menu1">
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="Contact.html" >Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="search">
+            <input id="search-bar" type="text" placeholder="Search...">
+        </div>
+        <hr>
         
+    
     </header>
     <main>
+        <div class="subSection">
         <!-- Control buttons -->
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('level1')"> Level 1</button>
-            <button class="btn" onclick="filterSelection('level2')"> Level 2</button>
+            <div id="myBtnContainer">
+                <button class="btn" onclick="filterObjects('all')"> Show all</button>
+                <button class="btn" onclick="filterObjects('level1')"> Level 1</button>
+                <button class="btn" onclick="filterObjects('level2')"> Level 2</button>
+                <br>
+                <button class="btn"> Ascending</button>
+                <button class="btn"> Descending</button>
+            </div>
+
+  
+            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        
+            <div class="objects">
+            <div class="filterDiv level1"><h4 class="Subtitle">College and Carreer Success Works</h4>
+                <p class="work1">
+                    Rapid changes in technology have created personal and employment choices that challenge each of us to find our place as contributing citizens in the emerging society. 
+                    Life in the 21st century presents significant opportunities, but it also creates potential hazards and ethical problems that demand responsible solutions.
+                    I was able to assess my strength and apply critical thinking and decision-making tools to help resolve some of the 
+                    important issues in the society with its competing interests.
+                </p>
+            </div>
+            <div class="filterDiv level1"><h4 class="Subtitle">Technical Maths for Computer Engineers</h4>
+                <p class="work1">
+                    This involves the study of algebraic and transcendental functions, an essential prerequisite to Calculus. I worked around algebraic expressions, solved algebraic equations and 
+                    linear systems and learnt the properties of and graphed algebraic and transcendental functions. In addition, I also studied computer number systems in addition to Boolean algebra 
+                    and logic to help solve problems involving computer systems. Finally I studied the addition and subtraction of vectors using vector components.
+                </p>
+            </div>
+            <div class="filterDiv level1"><h4 class="Subtitle">Computer Essentials</h4>
+                <p class="work1">
+                    Maintaining a computer, using operating system and productivity software, and expressing related environmental and sustainability concerns, is an important part 
+                    of working with Information Technology. I learnt about computer hardware, and used operating system software to maintain, utilize, and secure a computer. 
+                    I practised the use of spreadsheet software to solve problems, use formulas, and visualize data with charts. I learnt about computer hardware and software 
+                    with regards to financial and environmental sustainability. 
+                </p>
+            </div>
+            <div class="filterDiv level1"><h4 class="Subtitle">Introduction to Database</h4>
+                <p class="work1">
+                    Databases are used to store data and are a core component of many information technology systems. 
+                    I learnt the fundamentals of relational databases design using Entity Relation Diagrams (ERDs), and use Structured Query Language (SQL) to create, 
+                    modify and query a database. I designed and created databases that are maintainable, secure and adaptable to change in business requirements, using normalization. 
+                    I became familiar with the functions of a Database Management System (DBMS) and its components in comparison with legacy systems and alternative information storage mechanisms.
+                </p>
+            </div>
+            <div class="filterDiv level1"><h4 class="Subtitle">Introduction to Computer Programming</h4>
+                <p class="work1">Possessing the fundamentals of logic, problem-solving and programming language structure provides a solid foundation for further study in the field. 
+                        I was introduced to computer programming with emphasis on problem analysis and design, using algorithms, pseudocode, 
+                        flowcharts, UML Class Diagrams and testing, with the Java programming language used as a means to implement problem solution designs. 
+                        Through an introduction to the Java programming language I used sequential structures, selection structures, repetition structures, 
+                        variables, constants, methods, constructors, one-dimensional arrays, object-oriented programming, classes, objects, abstraction, encapsulation, 
+                        inputs, outputs, coding conventions and documentation.
+                </p>
+            </div>
+            <div class="filterDiv level1"><h4 class="Subtitle">Communications 1</h4>
+                <p class="work1">
+                    Communication remains an essential skill sought by employers, regardless of discipline or field of study. Using a practical, vocation-oriented approach, 
+                    I focused on meeting the requirements of effective communication. I practised writing, 
+                    speaking, reading, listening, locating and documenting information and using technology to communicate professionally. I developed and strengthened communication skills 
+                    that contribute to success in both educational and workplace environments.
+                </p>
+            </div>
+            <div class="filterDiv level2"><h4 class="Subtitle">Operating Systems Fund (GNU/Linux)</h4>
+                <p class="work1">
+                    Operating systems form the backbone of information technology systems coordinating the interaction between hardware and software. 
+                    I explored the basic concepts and components of Operating Systems (OS), and how they function and interact with hardware and software components. 
+                    I examined the details of operating system structures, process management, storage management, installation, configuration, and administration both in theory and through practical assignments based on the GNU/Linux operating system. 
+                </p>
+            </div>
+            </div>
         </div>
-  
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-        <div class="filterDiv level1">BMW</div>
-        <div class="filterDiv level1">Mercedes</div>
-        <div class="filterDiv level2">Cat</div>
-        <div class="filterDiv level2">Dog</div>
-  
-    </main>
+
+        
     
+    </main>
+    <footer>
+        <hr>
+        <div class="authour">
+            Text by Eniyanoto Alade. <br>  Formatting and code by Eniyanoto Alade.<br>©2023
+        </div>
+
+    </footer>
 </body>
 </html>

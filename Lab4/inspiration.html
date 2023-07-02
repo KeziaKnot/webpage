@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inspirational</title>
+    <meta name="author" content="Eniyanoto Alade">
+    <link rel="stylesheet" type="text/css" href="inspiration.css">
+    <script src="inspiration.js"></script>
+    <script>
+        function generateQuote(){
+            const inspiration = inspirations.quotes[Math.floor(Math.random() * inspirations.quotes.length)];
+       
+            document.querySelector(".quote-text").innerText = inspiration.quote;
+            document.querySelector(".quote-author").innerText = inspiration.author;
+        }
+        window.onload = generateQuote;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Inspirational Quotes</h1>
+        
+              
+    </header>
+    <main>
+        <div class="quote">
+            <div class="quote-text"></div>
+            <div class="quote-author"></div>
+          </div>  
+          <button class="get-quote-button" onclick="setInspiration()"> Get Quote </button>  
+
+    </main>
+    
+</body>
+</html>

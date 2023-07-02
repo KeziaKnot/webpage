@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab 2</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Eniyanoto Alade">
+        <style>
+            label[for="cardnum"]{
+                margin-left: 50px
+            }
+            label[for="expiry"]{
+                margin-left: 80px
+            }
+        </style>
+    </head>
+    <body>
+        
+            <h3 style="color: coral;">Order Form</h3>
+            
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label for="fullname">Name: </label>
+                <input style="float: none; margin-left: 20px" type="text" id="fullname" value="Eniyanoto" disabled size="30"><br>
+                <label for="email">Email: </label>
+                <input style="float: none; margin-left: 20px" type="text" id="email" value="alad0023@algonquinlive.com" size="30"><br>
+                <label for="address">Address: </label>
+                <textarea style="float: none; margin-left: 5px; vertical-align: middle;" name="address" id="address"  rows="5" cols="25"></textarea><br><br>
+                <label for="postcode">Postcode: </label>
+                <input type="text" id="postcode" name="postcode"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Product Information</legend>
+                <table border="1">
+                    <tr>
+                        <th width="150">Product</th>
+                        <th width="100">Part Number</th>
+                        <th width="100">Quantity</th>
+                        <th width="100">Unit Price</th>
+                        <th width="200">Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>Box</td>
+                        <td>AC100</td>
+                        <td></td>
+                        <td>$5</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Coffee Table</td>
+                        <td>AC200</td>
+                        <td></td>
+                        <td>$100</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Chair</td>
+                        <td>AC300</td>
+                        <td></td>
+                        <td>$150</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Desk</td>
+                        <td>AC400</td>
+                        <td></td>
+                        <td>$120</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Computer Table</td>
+                        <td>AC500</td>
+                        <td></td>
+                        <td>$130</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align: right;">Total:</td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+            <fieldset>
+                <h4>Credit Card Information</h4><br><br>
+                <label for="cardtype">Card Type:</label>
+                <label for="cardnum">Card Number: </label>
+                <input type="text" id="cardnum" name="cardnum"><br>
+                <label for="mastercard">Mastercard</label>
+                <input style="float: left;" type="radio" name="mastercard" id="mastercard" value=""><br> 
+                
+                <label for="visa">Visa</label>
+                <input style="float: left;" type="radio" name="visa" id="visa" value="">
+                <label for="expiry">Expiry Date: </label>
+                <input type="date" name="expiry" id="expiry"><br>
+                <label for="giftcard">Gift Card</label>
+                <input style="float: left;" type="radio" name="giftcard" id="giftcard" value=""><br>
+                
+                
+                <label for="delivery"><b>Delivery Address: </b></label>
+                <textarea name="delivery" id="delivery" style="vertical-align: middle;"  rows="5" cols="25"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear Form">
+            </fieldset>
+            
+
+
+
+
+            
+        
+    </body>
+</html>
